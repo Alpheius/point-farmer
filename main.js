@@ -4,7 +4,7 @@ var gameData = {
     pointsPerClickUpgradeCost: 10
 }
 
-var saveGame = JSON.parse(localStorage.getItem("pointMinerSave"))
+var saveGame = JSON.parse(localStorage.getItem("pointFarmerSave"))
 if (saveGame !== null) {
     gameData = saveData;
 }
