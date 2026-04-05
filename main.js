@@ -6,8 +6,13 @@ var gameData = {
 
 var saveGame = JSON.parse(localStorage.getItem("pointFarmerSave"))
 if (saveGame !== null) {
-    gameData = saveData;
+    gameData = saveGame;
 }
+
+document.getElementById("pointsFarmed").innerHTML = gameData.points + " Points";
+document.getElementById("clickUpgradesButton").innerHTML = "Buy Booster (costs " + (gameData.pointsPerClickUpgradeCost) + " Points)";
+document.getElementById("clickUpgrades").innerHTML = (gameData.pointsPerClick - 1) + " Boosters";
+document.getElementById("pointsFarmed").innerHTML = gameData.points + " Points";
 
 
 var mainGameLoop = window.setInterval(function() {
