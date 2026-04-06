@@ -8,8 +8,17 @@
 <body>
     <p id="pointsFarmed">0 Points</p>
     <p id="clickUpgrades">0 Boosters</p>
+    <p id="collisionsMade">0 Collisions</p>
     <button onclick="farmPoints()">Farm Point</button>
-    <button id="clickUpgradesButton" onclick="buyClickUpgrade()">Buy Booster (costs 10 Points)</button>
+    <button id="clickUpgradesButton" onclick="buyClickUpgrade()">Buy Booster (costs 10 Points)</button><br>
+    <canvas id="box" width="200" height="200" style="border:1px solid #000000;"></canvas>
+    <br>
+    <button id="makeCircle" onclick="createBallFromInputs()">Create Ball</button><br>
+    <input type="number" id="inputX">
+    <input type="number" id="inputY">
+    <input type="number" id="inputR"><br>
+    <input type="number" id="inputVX">
+    <input type="number" id="inputVY">
     <script src="main.js" charset="UTF-8" type="text/javascript"></script>
 </body>
 </html>
