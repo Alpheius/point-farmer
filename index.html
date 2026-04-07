@@ -10,8 +10,20 @@
     <p id="clickUpgrades">0 Boosters</p>
     <p id="collisionsMade">0 Collisions</p>
     <button onclick="farmPoints()">Farm Point</button>
-    <button id="clickUpgradesButton" onclick="buyClickUpgrade()">Buy Booster (costs 10 Points)</button><br>
-    <canvas id="box" width="200" height="200" style="border:1px solid #000000;"></canvas>
+    <button id="clickUpgradesButton" onclick="buyClickUpgrade()">Buy Booster (costs 10 Points)</button>
+    <br>
+    <p id="momentum">Total Momentum: 0</p>
+    <p id="kineticEnergy">"Total Kinetic Energy (kE): 0</p>
+    <canvas id="box" width="1000" height="1000" style="border:1px solid #000000;"></canvas>
+    <br>
+    <input type="number" id="inputGravity">
+    <button id="setGravity" onclick="setGravity()">Set Gravity Constant (Currently: 1)</button>
+    <br>
+    <input type="number" id="inputElasticity">
+    <button id="setElasticity" onclick="setElasticity()">Set Elasticity (Currently: 1)</button>
+    <br>
+    <input type="number" id="inputFriction">
+    <button id="setFriction" onclick="setFriction()">Set Friction (Currently: 0.99)</button>
     <br>
     <button id="makeCircle" onclick="createBallFromInputs()">Create Ball</button><br>
     <input type="number" id="inputX">
@@ -19,6 +31,7 @@
     <input type="number" id="inputR"><br>
     <input type="number" id="inputVX">
     <input type="number" id="inputVY">
+    <input type="number" id="inputDensity">
     <script src="main.js" charset="UTF-8" type="text/javascript"></script>
 </body>
 </html>
